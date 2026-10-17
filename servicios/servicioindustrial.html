@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicio industrial | ADVANCECOL</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO CORPORATIVO -->
+    <header class="encabezado">
+
+        <nav class="barra-verde" aria-label="Navegación principal">
+
+            <button class="boton-menu"
+                    id="boton-menu"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-lateral"
+                    aria-expanded="false">
+
+                <span class="lineas-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="texto-menu">menú</span>
+            </button>
+
+            <div class="enlaces-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../nosotros/nosotros.html">Nosotros</a>
+                <a href="../index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- BUSCADOR -->
+            <form class="buscador" id="form-busqueda" role="search">
+
+                <input type="search"
+                       id="buscar"
+                       placeholder="Buscar..."
+                       aria-label="Buscar en ADVANCECOL">
+
+                <button type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </button>
+
+            </form>
+
+        </nav>
+
+        <!-- LOGO -->
+        <div class="contenedor-logo">
+            <img
+                src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                alt="Logo de ADVANCECOL"
+                class="logo">
+        </div>
+
+    </header>
+
+    <!-- FONDO DEL MENÚ -->
+    <div class="fondo-menu" id="fondo-menu" hidden></div>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu-lateral"
+           id="menu-lateral"
+           aria-label="Menú de navegación"
+           aria-hidden="true"
+           inert>
+
+        <div class="menu-lateral-header">
+            <h2>ADVANCECOL</h2>
+
+            <button id="cerrar-menu"
+                    type="button"
+                    aria-label="Cerrar menú">
+                &times;
+            </button>
+        </div>
+
+        <div class="menu-principal">
+            <a href="../index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="../index.html#productos">Productos</a>
+            <a href="../nosotros/nosotros.html">Nosotros</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </div>
+
+        <div class="menu-secundario">
+
+            <a href="../index.html#trabaja">
+                Trabaja con nosotros
+            </a>
+
+            <a href="https://wa.me/573202699680"
+               target="_blank"
+               rel="noopener noreferrer">
+                Chat de WhatsApp
+            </a>
+
+            <h3>Atención al cliente</h3>
+
+            <a href="mailto:gerenciaadvancecol@gmail.com">
+                ✉ gerenciaadvancecol@gmail.com
+            </a>
+
+            <div class="datos-contacto">
+                <span>Teléfonos</span>
+
+                <a href="tel:+573202699680">
+                    ☎ 320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    ☎ 314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    ☎ 320 607 11 84
+                </a>
+            </div>
+
+            <div class="direccion">
+                <span>Dirección</span>
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+            </div>
+
+            <a href="../index.html#preguntas-frecuentes">
+                Preguntas frecuentes
+            </a>
+
+            <div class="redes-sociales">
+
+                <h3>Síguenos en nuestras redes</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red facebook">f</span>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red instagram">◎</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red tiktok">♪</span>
+                    <span>TikTok</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="creditos-web">
+            <span>Desarrollo web</span>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+        </div>
+
+    </aside>
+
+    
+
+
+
+<!-- SERVICIO INDUSTRIAL ADVANCECOL -->
+<main class="pagina-detalle">
+
+    <!-- VOLVER A SERVICIOS -->
+    <a href="servicios.html" class="volver-servicios">
+        ← Volver a todos los servicios
+    </a>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="titulo-detalle">
+        <h1>Servicio Industrial</h1>
+        <div class="linea-detalle"></div>
+    </div>
+
+    <!-- PRESENTACIÓN DEL SERVICIO -->
+    <section class="detalle-principal">
+
+        <!-- IMAGEN -->
+        <div class="detalle-imagen">
+            <img
+                src="../assets/servicioindustrial.png"
+                alt="Servicio Industrial ADVANCECOL"
+            >
+        </div>
+
+        <!-- INFORMACIÓN PRINCIPAL -->
+        <div class="detalle-informacion">
+
+            <h2>
+                Soluciones integrales en ingeniería metalmecánica
+            </h2>
+
+            <p>
+                En ADVANCECOL ofrecemos soluciones en
+                fabricación, montaje, soldadura y
+                mantenimiento industrial, adaptadas a
+                las necesidades de cada proyecto.
+            </p>
+
+            <p>
+                Desarrollamos servicios orientados al
+                sector industrial y petrolero, incluyendo
+                fabricación de tanques, estructuras
+                metálicas, tuberías y mantenimiento
+                de equipos especializados.
+            </p>
+
+            <h3>Nuestros principales servicios</h3>
+
+            <ul class="lista-resumen">
+                <li>
+                    Fabricación y mantenimiento de
+                    tanques de lodo.
+                </li>
+                <li>
+                    Soldadura y montaje industrial.
+                </li>
+                <li>
+                    Fabricación de estructuras metálicas.
+                </li>
+                <li>
+                    Instalación y reparación de tuberías.
+                </li>
+                <li>
+                    Mantenimiento de equipos industriales.
+                </li>
+            </ul>
+
+            <!-- BOTÓN WHATSAPP -->
+            <a
+                class="boton-whatsapp"
+                href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20quiero%20cotizar%20el%20servicio%20industrial."
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Solicitar cotización por WhatsApp ↗
+            </a>
+
+        </div>
+    </section>
+
+    <!-- DESCRIPCIÓN DEL SERVICIO -->
+    <section class="descripcion-detalle">
+
+        <h2>Descripción del servicio</h2>
+
+        <!-- FABRICACIÓN DE TANQUES -->
+        <div class="bloque-descripcion">
+
+            <h3>
+                Fabricación y mantenimiento de tanques de lodo
+            </h3>
+
+            <p>
+                Ofrecemos soluciones para la fabricación,
+                modificación, reparación y mantenimiento
+                de tanques de lodo utilizados en
+                operaciones industriales y petroleras.
+            </p>
+
+            <ul>
+                <li>Fabricación de tanques.</li>
+                <li>Modificación de estructuras.</li>
+                <li>Reparación y mantenimiento.</li>
+                <li>Instalación de tuberías.</li>
+                <li>Sandblasting.</li>
+                <li>Pintura industrial.</li>
+            </ul>
+
+        </div>
+
+        <!-- SOLDADURA INDUSTRIAL -->
+        <div class="bloque-descripcion">
+
+            <h3>Soldadura industrial especializada</h3>
+
+            <p>
+                Realizamos trabajos de soldadura para
+                fabricación, reparación y mantenimiento
+                de estructuras y equipos industriales,
+                con procedimientos basados en estándares
+                técnicos como ASME y API.
+            </p>
+
+            <ul>
+                <li>Soldadura industrial ASME y API.</li>
+                <li>Soldadura Flux Core.</li>
+                <li>Soldadura Innershield.</li>
+                <li>Fabricación de estructuras metálicas.</li>
+                <li>Reparación de componentes metálicos.</li>
+            </ul>
+
+        </div>
+
+        <!-- MONTAJES INDUSTRIALES -->
+        <div class="bloque-descripcion">
+
+            <h3>Fabricación y montajes industriales</h3>
+
+            <p>
+                Brindamos soluciones de ingeniería
+                metalmecánica orientadas a la
+                construcción y adecuación de
+                infraestructura industrial.
+            </p>
+
+            <ul>
+                <li>
+                    Fabricación de tanques de acero
+                    y acero al carbono.
+                </li>
+                <li>
+                    Construcción de líneas de tuberías.
+                </li>
+                <li>
+                    Fabricación de estaciones de bombeo.
+                </li>
+                <li>
+                    Construcción de manifolds.
+                </li>
+                <li>
+                    Montaje de estructuras metálicas.
+                </li>
+                <li>
+                    Construcción de plantas de
+                    inyección de agua.
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- MANTENIMIENTO INDUSTRIAL -->
+        <div class="bloque-descripcion">
+
+            <h3>Mantenimiento de equipos industriales</h3>
+
+            <p>
+                Ofrecemos soluciones de mantenimiento,
+                reparación y acondicionamiento de equipos
+                e infraestructura utilizada en procesos
+                industriales y operaciones de perforación.
+            </p>
+
+            <ul>
+                <li>
+                    Mantenimiento industrial de soldadura.
+                </li>
+                <li>
+                    Mantenimiento de taladros
+                    de perforación.
+                </li>
+                <li>
+                    Acondicionamiento de bombas de lodo.
+                </li>
+                <li>
+                    Reparación de estructuras metálicas.
+                </li>
+                <li>
+                    Adecuación de componentes industriales.
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- SANDBLASTING -->
+        <div class="bloque-descripcion">
+
+            <h3>Sandblasting y pintura industrial</h3>
+
+            <p>
+                Realizamos procesos de preparación y
+                limpieza de superficies metálicas
+                mediante técnicas abrasivas para
+                eliminar oxidación, residuos e impurezas,
+                preparando las estructuras para
+                la aplicación de pintura.
+            </p>
+
+            <ul>
+                <li>Limpieza de superficies metálicas.</li>
+                <li>Remoción de óxido e impurezas.</li>
+                <li>Preparación de superficies.</li>
+                <li>Aplicación de pintura industrial.</li>
+            </ul>
+
+        </div>
+
+        <!-- PERSONAL Y HERRAMIENTAS -->
+        <div class="bloque-descripcion">
+
+            <h3>Suministro de personal y herramientas</h3>
+
+            <p>
+                Disponemos de soluciones de suministro
+                de personal técnico y herramientas
+                para apoyar la ejecución de diferentes
+                proyectos industriales.
+            </p>
+
+            <ul>
+                <li>Supervisores.</li>
+                <li>Soldadores calificados.</li>
+                <li>Tuberos.</li>
+                <li>Armadores.</li>
+                <li>Auxiliares técnicos.</li>
+                <li>Cuadrillas de trabajo.</li>
+                <li>Equipos de soldadura.</li>
+                <li>Equipos de oxicorte.</li>
+                <li>Pulidoras y herramientas de mano.</li>
+            </ul>
+
+        </div>
+
+        <!-- ANTES DE CONTRATAR -->
+        <div class="bloque-descripcion">
+
+            <h3>Antes de contratar</h3>
+
+            <p>
+                Para solicitar nuestros servicios,
+                comunícate con ADVANCECOL e indícanos
+                las características del proyecto,
+                tipo de trabajo requerido, ubicación,
+                dimensiones y condiciones de ejecución.
+            </p>
+
+            <p>
+                Nuestro equipo evaluará los
+                requerimientos para ofrecer una
+                propuesta personalizada, de acuerdo
+                con el alcance y las necesidades
+                del servicio.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- COTIZACIÓN FINAL -->
+    <section class="ventanas-cotizacion">
+
+        <h2>
+            ¿Necesitas soluciones para tu proyecto industrial?
+        </h2>
+
+        <p>
+            En ADVANCECOL ofrecemos servicios de
+            fabricación, soldadura, montaje y
+            mantenimiento industrial.
+            Contáctanos para recibir asesoría
+            y una cotización personalizada.
+        </p>
+
+        <a
+            href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20necesito%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20industrial."
+            class="boton-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Cotizar servicio industrial ↗
+        </a>
+
+    </section>
+
+</main>
+
+
+
+
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="footer-advancecol">
+
+        <div class="footer-contenedor">
+
+            <div class="footer-columna footer-marca">
+
+                <img
+                    src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                    alt="Logo de ADVANCECOL"
+                    class="footer-logo">
+
+                <h3>ADVANCECOL</h3>
+
+                <p>
+                    Expertos en servicios generales.
+                    Transformamos espacios en
+                    experiencias de bienestar.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces útiles</h3>
+
+                <a href="../index.html#trabaja">
+                    Trabaja con nosotros
+                </a>
+
+                <a href="https://wa.me/573202699680"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Chat de WhatsApp
+                </a>
+
+                <a href="../index.html#preguntas-frecuentes">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Atención al cliente</h3>
+
+                <a href="mailto:gerenciaadvancecol@gmail.com">
+                    gerenciaadvancecol@gmail.com
+                </a>
+
+                <a href="tel:+573202699680">
+                    320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    320 607 11 84
+                </a>
+
+                <h3 class="footer-subtitulo">Dirección</h3>
+
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    TikTok ↗
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN LEGAL -->
+        <div class="footer-legal">
+
+            <h3>Información legal</h3>
+
+            <div class="footer-enlaces-legales">
+
+                <a href="../politica-datos.html">
+                    Tratamiento de datos personales
+                </a>
+
+                <a href="../terminos.html">
+                    Términos y condiciones
+                </a>
+
+                <a href="../cookies.html">
+                    Política de cookies
+                </a>
+
+                <a href="../privacidad.html">
+                    Aviso de privacidad
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-inferior">
+
+            <p>
+                &copy; <span id="anio-actual"></span>
+                ADVANCECOL. Todos los derechos reservados.
+            </p>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+
+    <script>
+        const anio = document.getElementById("anio-actual");
+
+        if (anio) {
+            anio.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>

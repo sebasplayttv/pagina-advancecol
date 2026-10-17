@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCECOL | Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<!-- ENCABEZADO -->
+<header class="encabezado">
+
+    <!-- BARRA VERDE -->
+    <nav class="barra-verde" aria-label="Navegación principal">
+
+        <!-- BOTÓN MENÚ -->
+        <button class="boton-menu"
+                id="boton-menu"
+                type="button"
+                aria-label="Abrir menú"
+                aria-controls="menu-lateral"
+                aria-expanded="false">
+
+            <span class="lineas-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+            <span class="texto-menu">menú</span>
+
+        </button>
+
+        <!-- OPCIONES PRINCIPALES -->
+        <div class="enlaces-nav">
+
+            <a href="#inicio">Inicio</a>
+
+            <a href="servicios/servicios.html">Servicios</a>
+
+            <a href="#productos">Productos</a>
+
+            <a href="nosotros/nosotros.html">Nosotros</a>
+
+            <a href="contacto/contacto.html#contacto">Contacto</a>
+
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador" id="form-busqueda" role="search">
+
+            <input
+                type="search"
+                id="buscar"
+                placeholder="Buscar..."
+                aria-label="Buscar en ADVANCECOL"
+            >
+
+            <button type="submit" aria-label="Buscar">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="M16 16L21 21"></path>
+                </svg>
+            </button>
+
+        </form>
+
+    </nav>
+
+    <!-- LOGO ORIGINAL FUERA DE LA BARRA -->
+    <div class="contenedor-logo">
+
+        <img
+            src="assets/Captura de pantalla 2026-10-09 194754.png"
+            alt="Logo de Advancecol"
+            class="logo"
+        >
+
+    </div>
+
+</header>
+
+<!-- FONDO OSCURO DEL MENÚ LATERAL -->
+<div class="fondo-menu" id="fondo-menu" hidden></div>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+
+<!-- MENÚ LATERAL -->
+<aside class="menu-lateral"
+       id="menu-lateral"
+       aria-label="Menú de navegación"
+       aria-hidden="true"
+       inert>
+
+    <!-- ENCABEZADO DEL MENÚ -->
+    <div class="menu-lateral-header">
+        <h2>ADVANCECOL</h2>
+
+        <button id="cerrar-menu"
+                type="button"
+                aria-label="Cerrar menú">
+            &times;
+        </button>
+    </div>
+
+    <!-- OPCIONES PRINCIPALES -->
+    <div class="menu-principal">
+        <a href="#inicio">Inicio</a>
+        <a href="servicios/servicios.html">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="nosotros/nosotros.html">Nosotros</a>
+        <a href="contacto/contacto.html#contacto">Contacto</a>
+    </div>
+
+    <!-- INFORMACIÓN COMPLEMENTARIA -->
+    <div class="menu-secundario">
+
+        <a href="#trabaja">
+            Trabaja con nosotros
+        </a>
+
+        <a href="https://wa.me/573202699680"
+           target="_blank"
+           rel="noopener noreferrer">
+            Chat de WhatsApp
+        </a>
+
+        <h3>Atención al cliente</h3>
+
+        <a href="mailto:gerenciaadvancecol@gmail.com">
+            ✉ gerenciaadvancecol@gmail.com
+        </a>
+
+        <div class="datos-contacto">
+            <span>Teléfonos</span>
+
+            <a href="tel:+573202699680">
+                ☎ 320 269 9680
+            </a>
+
+            <a href="tel:+573147293930">
+                ☎ 314 729 39 30
+            </a>
+
+            <a href="tel:+573206071184">
+                ☎ 320 607 11 84
+            </a>
+        </div>
+
+        <div class="direccion">
+            <span>Dirección</span>
+            <p>
+                Carrera 47 # 12 A - 07<br>
+                Bogotá, Colombia
+            </p>
+        </div>
+
+        <a href="#preguntas-frecuentes">
+            Preguntas frecuentes
+        </a>
+
+        
+<!-- REDES SOCIALES ADVANCECOL -->
+<div class="redes-sociales">
+
+    <h3>Síguenos en nuestras redes</h3>
+
+    <a href="https://www.facebook.com/profile.php?id=61576306651314"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="red-social">
+        <span class="icono-red facebook">f</span>
+        <span>Facebook</span>
+    </a>
+
+    <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="red-social">
+        <span class="icono-red instagram">◎</span>
+        <span>Instagram</span>
+    </a>
+
+    <a href="https://www.tiktok.com/@advancecol4"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="red-social">
+        <span class="icono-red tiktok">♪</span>
+        <span>TikTok</span>
+    </a>
+
+</div>
+
+
+    </div>
+
+    
+<!-- CRÉDITOS DEL DESARROLLADOR -->
+<div class="creditos-web">
+    <span>Desarrollo web</span>
+
+    <a href="https://github.com/sebasplayttv"
+       id="enlace-creador"
+       target="_blank"
+       rel="noopener noreferrer">
+        Desarrollado por SebasPlayTTV ↗
+    </a>
+</div>
+
+
+</aside>
+
+
+
+<!-- ==================================
+     CONTENIDO PRINCIPAL
+================================== -->
+
+<main id="inicio">
+
+    <!-- CARRUSEL DE ADVANCECOL -->
+    <section class="seccion-carrusel">
+
+        <div class="carrusel" id="carrusel">
+
+            <!-- IMAGEN 1 -->
+            <div class="diapositiva activa">
+                <img src="assets/limpieza-hogares.png"
+                     alt="Limpieza para hogares y empresas">
+
+                <div class="contenido-diapositiva">
+                    <h2>Limpieza para hogares y empresas</h2>
+                    <a href="servicios/limpieza-dias.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 2 -->
+            <div class="diapositiva">
+                <img src="assets/limpieza-oficinas.png"
+                     alt="Limpieza de oficinas">
+
+                <div class="contenido-diapositiva">
+                    <h2>Planes de limpieza para oficinas</h2>
+                    <a href="servicios/limpieza-oficinas.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 3 -->
+            <div class="diapositiva">
+                <img src="assets/limpieza-ventanas.png"
+                     alt="Limpieza de ventanas">
+
+                <div class="contenido-diapositiva">
+                    <h2>Limpieza de ventanas con robot magnético</h2>
+                    <a href="servicios/limpieza-ventanas.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 4 -->
+            <div class="diapositiva">
+                <img src="assets/mantenimiento.png"
+                     alt="Mantenimiento">
+
+                <div class="contenido-diapositiva">
+                    <h2>Servicio de mantenimiento</h2>
+                    <a href="servicios/mantenimiento.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 5 -->
+            <div class="diapositiva">
+                <img src="assets/todero.png"
+                     alt="Servicio de todero">
+
+                <div class="contenido-diapositiva">
+                    <h2>Servicio de todero</h2>
+                    <a href="servicios/todero.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 6 -->
+            <div class="diapositiva">
+                <img src="assets/jardineria.png"
+                     alt="Jardinería">
+
+                <div class="contenido-diapositiva">
+                    <h2>Servicio de jardinería</h2>
+                    <a href="servicios/jardineria.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 7 -->
+            <div class="diapositiva">
+                <img src="assets/lavado-tanques.png"
+                     alt="Lavado de tanques">
+
+                <div class="contenido-diapositiva">
+                    <h2>Servicio de lavado de tanques</h2>
+                    <a href="servicios/lavado-tanques.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 8 -->
+            <div class="diapositiva">
+                <img src="assets/estructuras.png"
+                     alt="Estructuras metálicas">
+
+                <div class="contenido-diapositiva">
+                    <h2>Fabricación de estructuras y ornamentación</h2>
+                    <a href="servicios/estructuras.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN 9 -->
+            <div class="diapositiva">
+                <img src="assets/servicioindustrial.png"
+                     alt="Servicio industrial">
+
+                <div class="contenido-diapositiva">
+                    <h2>Servicio industrial</h2>
+                    <a href="servicios/servicioindustrial.html">Ver servicio →</a>
+                </div>
+            </div>
+
+            <!-- FLECHAS -->
+            <button class="flecha-carrusel anterior"
+                    id="anterior"
+                    type="button"
+                    aria-label="Anterior">
+                ❮
+            </button>
+
+            <button class="flecha-carrusel siguiente"
+                    id="siguiente"
+                    type="button"
+                    aria-label="Siguiente">
+                ❯
+            </button>
+
+            <!-- INDICADORES -->
+            <div class="indicadores" id="indicadores"></div>
+
+        </div>
+
+    </section>
+
+
+    
+<!-- =====================================
+     PRESENTACIÓN DE ADVANCECOL
+===================================== -->
+
+<section class="presentacion-advancecol"
+         id="presentacion">
+
+    <div class="contenido-presentacion">
+
+        <!-- NOMBRE DE LA EMPRESA -->
+        <h1 class="titulo-empresa">
+            ADVANCECOL
+        </h1>
+
+        <!-- LÍNEA DECORATIVA -->
+        <div class="linea-decorativa"></div>
+
+        <!-- ESLOGAN -->
+        <h3 class="eslogan">
+            Expertos en servicios generales.
+            Transformamos espacios en
+            experiencias de bienestar.
+        </h3>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="descripcion-empresa">
+
+            <h3>
+                Soluciones integrales y mantenimiento
+                experto para tus espacios.
+            </h3>
+
+            <p>
+                En <strong>ADVANCECOL</strong> unimos todo
+                lo que necesitas en un solo lugar:
+                desde aseo residencial y corporativo,
+                limpieza de ventanas y lavado de tanques,
+                hasta servicios de todero, jardinería,
+                plomería, mantenimiento y ornamentación.
+                Cuidamos cada detalle estructural y
+                estético para garantizarte tranquilidad,
+                funcionalidad y pulcritud absoluta.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SECCIÓN NUESTROS SERVICIOS
+===================================== -->
+<section class="seccion-servicios" id="servicios">
+
+    <div class="contenedor-servicios">
+        <h2 class="titulo-servicios">Nuestros Servicios</h2>
+
+        <div class="lista-servicios">
+
+            <!-- Servicio 1 -->
+            <article class="servicio-card servicio-industrial">
+                <img src="assets/servicioindustrial.png" alt="Servicio industrial">
+                <div class="servicio-info">
+                    <h3>Servicio Industrial</h3>
+                    <p>
+                        ofrecemos soluciones integrales de ingeniería metalmecánica,
+                        especializadas en fabricación, montaje, 
+                        reparación y mantenimiento de equipos e infraestructura industrial, 
+                        principalmente para el sector petrolero.
+                        Nuestros servicios incluyen soldaduras bajo estándares ASME y API, 
+                        procesos FLUX CORE e INNERSHIELD, fabricación de tanques de acero y acero al carbono, 
+                        construcción de líneas de tuberías, estaciones de bombeo, estructuras metálicas, 
+                        manifolds y plantas de inyección de agua.También realizamos mantenimiento industrial de equipos para taladros de perforación, 
+                        acondicionamiento de bombas de lodo y construcción de tanques y sistemas asociados a las operaciones petroleras.
+                        Contamos con personal calificado y herramientas especializadas para desarrollar proyectos con calidad, seguridad, responsabilidad y cumplimiento, 
+                        ofreciendo soluciones adaptadas a las necesidades de cada cliente.
+                    </p>
+                    <a href="servicios/servicioindustrial.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 2 -->
+            <article class="servicio-card">
+                <img src="assets/limpieza-hogares.png" alt="Servicio de limpieza por días">
+                <div class="servicio-info">
+                    <h3>Servicio de limpieza por días</h3>
+                    <p>
+                        Brindamos soluciones de aseo para hogares y empresas,
+                        adaptándonos a tus horarios, necesidades y frecuencia
+                        de servicio.
+                    </p>
+                    <a href="servicios/limpieza-dias.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 3 -->
+            <article class="servicio-card">
+                <img src="assets/limpieza-oficinas.png" alt="Planes de limpieza para oficinas">
+                <div class="servicio-info">
+                    <h3>Planes ahorro de limpieza en oficinas</h3>
+                    <p>
+                        Diseñamos planes de limpieza eficientes para espacios
+                        corporativos, mejorando la presentación, higiene y
+                        bienestar del entorno laboral.
+                    </p>
+                    <a href="servicios/limpieza-oficinas.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 4 -->
+            <article class="servicio-card">
+                <img src="assets/todero.png" alt="Servicio de todero">
+                <div class="servicio-info">
+                    <h3>Servicio de todero</h3>
+                    <p>
+                        Apoyamos con arreglos locativos, instalaciones,
+                        reparaciones básicas y soluciones prácticas para el
+                        mantenimiento de tus espacios.
+                    </p>
+                    <a href="servicios/todero.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 5 -->
+            <article class="servicio-card">
+                <img src="assets/jardineria.png" alt="Servicio de jardinería">
+                <div class="servicio-info">
+                    <h3>Servicio de jardinería</h3>
+                    <p>
+                        Realizamos poda, mantenimiento y embellecimiento de
+                        zonas verdes para conservar tus jardines en excelentes
+                        condiciones.
+                    </p>
+                    <a href="servicios/jardineria.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 6 -->
+            <article class="servicio-card">
+                <img src="assets/limpieza-ventanas.png" alt="Limpieza de ventanas">
+                <div class="servicio-info">
+                    <h3>Limpieza de ventanas</h3>
+                    <p>
+                        Contamos con soluciones modernas para limpieza de
+                        vidrios y ventanales, incluyendo equipos especializados
+                        como robot magnético.
+                    </p>
+                    <a href="servicios/limpieza-ventanas.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 7 -->
+            <article class="servicio-card">
+                <img src="assets/mantenimiento.png" alt="Servicio de mantenimiento">
+                <div class="servicio-info">
+                    <h3>Servicio de mantenimiento</h3>
+                    <p>
+                        Ejecutamos labores de mantenimiento preventivo y
+                        correctivo para conservar la funcionalidad y el buen
+                        estado de tus instalaciones.
+                    </p>
+                    <a href="servicios/mantenimiento.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 8 -->
+            <article class="servicio-card">
+                <img src="assets/estructuras.png" alt="Fabricación de estructuras y ornamentación">
+                <div class="servicio-info">
+                    <h3>Fabricación de estructuras y ornamentación</h3>
+                    <p>
+                        Desarrollamos trabajos metálicos, estructuras y piezas
+                        ornamentales con soluciones funcionales y estéticas
+                        para distintos espacios.
+                    </p>
+                    <a href="servicios/estructuras.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+            <!-- Servicio 9 -->
+            <article class="servicio-card">
+                <img src="assets/lavado-tanques.png" alt="Servicio de lavado de tanques">
+                <div class="servicio-info">
+                    <h3>Servicio de lavado de tanques</h3>
+                    <p>
+                        Ofrecemos limpieza y mantenimiento de tanques de agua
+                        con procedimientos adecuados para garantizar higiene y
+                        seguridad.
+                    </p>
+                    <a href="servicios/lavado-tanques.html" class="boton-servicio">Saber más</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================
+     FOOTER CORPORATIVO ADVANCECOL
+===================================== -->
+
+<footer class="footer-advancecol">
+
+    <div class="footer-contenedor">
+
+        <!-- EMPRESA -->
+        <div class="footer-columna footer-marca">
+
+            <img
+                src="assets/Captura de pantalla 2026-10-09 194754.png"
+                alt="Logo de Advancecol"
+                class="footer-logo"
+            >
+
+            <h3>ADVANCECOL</h3>
+
+            <p>
+                Expertos en servicios generales.
+                Transformamos espacios en
+                experiencias de bienestar.
+            </p>
+
+        </div>
+
+        <!-- ENLACES -->
+        <div class="footer-columna">
+
+            <h3>Enlaces útiles</h3>
+
+            <a href="#trabaja">
+                Trabaja con nosotros
+            </a>
+
+            <a href="https://wa.me/573202699680"
+               target="_blank"
+               rel="noopener noreferrer">
+                Chat de WhatsApp
+            </a>
+
+            <a href="#preguntas-frecuentes">
+                Preguntas frecuentes
+            </a>
+
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="footer-columna">
+
+            <h3>Atención al cliente</h3>
+
+            <a href="mailto:gerenciaadvancecol@gmail.com">
+                gerenciaadvancecol@gmail.com
+            </a>
+
+            <a href="tel:+573202699680">
+                320 269 9680
+            </a>
+
+            <a href="tel:+573147293930">
+                314 729 39 30
+            </a>
+
+            <a href="tel:+573206071184">
+                320 607 11 84
+            </a>
+
+            <h3 class="footer-subtitulo">Dirección</h3>
+
+            <p>
+                Carrera 47 # 12 A - 07
+                Bogotá, Colombia
+            </p>
+
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div class="footer-columna">
+
+            <h3>Síguenos</h3>
+
+            <a
+                href="https://www.facebook.com/profile.php?id=61576306651314"
+                target="_blank"
+                rel="noopener noreferrer">
+                Facebook ↗
+            </a>
+
+            <a
+                href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                target="_blank"
+                rel="noopener noreferrer">
+                Instagram ↗
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@advancecol4"
+                target="_blank"
+                rel="noopener noreferrer">
+                TikTok ↗
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- INFORMACIÓN LEGAL -->
+    <div class="footer-legal">
+
+        <h3>Información legal</h3>
+
+        <div class="footer-enlaces-legales">
+
+            <a href="politica-datos.html">
+                Tratamiento de datos personales
+            </a>
+
+            <a href="terminos.html">
+                Términos y condiciones
+            </a>
+
+            <a href="cookies.html">
+                Política de cookies
+            </a>
+
+            <a href="privacidad.html">
+                Aviso de privacidad
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- DERECHOS Y CRÉDITOS -->
+    <div class="footer-inferior">
+
+        <p>
+            &copy; <span id="anio-actual"></span>
+            ADVANCECOL. Todos los derechos reservados.
+        </p>
+
+        <a href="https://github.com/sebasplayttv"
+           target="_blank"
+           rel="noopener noreferrer">
+            Desarrollado por SebasPlayTTV ↗
+        </a>
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

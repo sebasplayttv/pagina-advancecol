@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Limpieza de ventanas | ADVANCECOL</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO CORPORATIVO -->
+    <header class="encabezado">
+
+        <nav class="barra-verde" aria-label="Navegación principal">
+
+            <button class="boton-menu"
+                    id="boton-menu"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-lateral"
+                    aria-expanded="false">
+
+                <span class="lineas-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="texto-menu">menú</span>
+            </button>
+
+            <div class="enlaces-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../nosotros/nosotros.html">Nosotros</a>
+                <a href="../index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- BUSCADOR -->
+            <form class="buscador" id="form-busqueda" role="search">
+
+                <input type="search"
+                       id="buscar"
+                       placeholder="Buscar..."
+                       aria-label="Buscar en ADVANCECOL">
+
+                <button type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </button>
+
+            </form>
+
+        </nav>
+
+        <!-- LOGO -->
+        <div class="contenedor-logo">
+            <img
+                src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                alt="Logo de ADVANCECOL"
+                class="logo">
+        </div>
+
+    </header>
+
+    <!-- FONDO DEL MENÚ -->
+    <div class="fondo-menu" id="fondo-menu" hidden></div>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu-lateral"
+           id="menu-lateral"
+           aria-label="Menú de navegación"
+           aria-hidden="true"
+           inert>
+
+        <div class="menu-lateral-header">
+            <h2>ADVANCECOL</h2>
+
+            <button id="cerrar-menu"
+                    type="button"
+                    aria-label="Cerrar menú">
+                &times;
+            </button>
+        </div>
+
+        <div class="menu-principal">
+            <a href="../index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="../index.html#productos">Productos</a>
+            <a href="../nosotros/nosotros.html">Nosotros</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </div>
+
+        <div class="menu-secundario">
+
+            <a href="../index.html#trabaja">
+                Trabaja con nosotros
+            </a>
+
+            <a href="https://wa.me/573202699680"
+               target="_blank"
+               rel="noopener noreferrer">
+                Chat de WhatsApp
+            </a>
+
+            <h3>Atención al cliente</h3>
+
+            <a href="mailto:gerenciaadvancecol@gmail.com">
+                ✉ gerenciaadvancecol@gmail.com
+            </a>
+
+            <div class="datos-contacto">
+                <span>Teléfonos</span>
+
+                <a href="tel:+573202699680">
+                    ☎ 320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    ☎ 314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    ☎ 320 607 11 84
+                </a>
+            </div>
+
+            <div class="direccion">
+                <span>Dirección</span>
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+            </div>
+
+            <a href="../index.html#preguntas-frecuentes">
+                Preguntas frecuentes
+            </a>
+
+            <div class="redes-sociales">
+
+                <h3>Síguenos en nuestras redes</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red facebook">f</span>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red instagram">◎</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red tiktok">♪</span>
+                    <span>TikTok</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="creditos-web">
+            <span>Desarrollo web</span>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+        </div>
+
+    </aside>
+
+    
+<!-- PÁGINA DE LIMPIEZA DE VENTANAS -->
+<main class="pagina-detalle">
+
+    <!-- REGRESAR A SERVICIOS -->
+    <a href="servicios.html" class="volver-servicios">
+        ← Volver a todos los servicios
+    </a>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="titulo-detalle">
+        <h1>Servicio de limpieza de ventanas</h1>
+        <div class="linea-detalle"></div>
+    </div>
+
+    <!-- PRESENTACIÓN -->
+    <section class="detalle-principal">
+
+        <!-- IMAGEN DEL SERVICIO -->
+        <div class="detalle-imagen">
+            <img
+                src="../assets/limpieza-ventanas.png"
+                alt="Servicio de limpieza de ventanas ADVANCECOL"
+            >
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="detalle-informacion">
+
+            <h2>Limpieza profesional de ventanas</h2>
+
+            <p>
+                En ADVANCECOL S.A.S. realizamos la limpieza
+                de ventanas mediante un sistema seguro y
+                eficiente, apoyado en tecnología de limpieza
+                con robot magnético.
+            </p>
+
+            <p>
+                Nuestro servicio está orientado a conseguir
+                excelentes resultados, favoreciendo la
+                transparencia del vidrio y la eliminación
+                de suciedad, manchas y acumulación de polvo.
+            </p>
+
+            <h3>¿Por qué elegirnos?</h3>
+
+            <ul class="lista-resumen">
+                <li>Tecnología de limpieza innovadora.</li>
+                <li>Profesionalismo y compromiso.</li>
+                <li>Atención según las necesidades del cliente.</li>
+                <li>Enfoque en la calidad del servicio.</li>
+            </ul>
+
+            <h3>Cotiza tu servicio</h3>
+
+            <p>
+                Comunícate con nuestro equipo para conocer
+                la disponibilidad, condiciones de atención
+                y tarifa correspondiente.
+            </p>
+
+            <a
+                class="boton-whatsapp"
+                href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20quiero%20cotizar%20el%20servicio%20de%20limpieza%20de%20ventanas."
+                target="_blank"
+                rel="noopener noreferrer">
+                Solicitar cotización por WhatsApp ↗
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- DESCRIPCIÓN COMPLETA -->
+    <section class="descripcion-detalle">
+
+        <h2>Descripción del servicio</h2>
+
+        <div class="bloque-descripcion">
+
+            <h3>Características del servicio</h3>
+
+            <p>
+                El lavado incluye ventanas de hasta
+                2 metros de ancho por 2 metros de alto.
+            </p>
+
+            <p>
+                Si una ventana supera estas dimensiones,
+                se cobrará una ventana adicional, según
+                las condiciones de contratación.
+            </p>
+
+        </div>
+
+        <!-- INCLUSIONES -->
+        <div class="bloque-descripcion">
+
+            <h3>¿Qué incluye?</h3>
+
+            <ul>
+                <li>
+                    Limpieza interior y exterior de las ventanas.
+                </li>
+
+                <li>
+                    Eliminación de polvo acumulado en los vidrios.
+                </li>
+
+                <li>
+                    Limpieza de los marcos de las ventanas.
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- EXCLUSIONES -->
+        <div class="bloque-descripcion">
+
+            <h3>¿Qué no incluye?</h3>
+
+            <ul>
+                <li>
+                    Retiro o instalación de cortinas.
+                </li>
+
+                <li>
+                    Retiro de químicos como silicona
+                    o pintura.
+                </li>
+
+                <li>
+                    Limpieza sobre vidrios curvos
+                    o tallados.
+                </li>
+
+                <li>
+                    Limpieza de ventanas tipo
+                    mosaico o cuadrícula.
+                </li>
+
+                <li>
+                    Limpieza de ventanas que requieran
+                    andamios, arnés o línea de vida.
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- CONDICIONES -->
+        <div class="bloque-descripcion">
+
+            <h3>Condiciones del servicio</h3>
+
+            <ul>
+                <li>
+                    El cliente deberá facilitar
+                    acceso a una toma de corriente.
+                </li>
+
+                <li>
+                    Las cortinas deben encontrarse
+                    retiradas antes de iniciar
+                    el servicio.
+                </li>
+
+                <li>
+                    Se deberá contar con disponibilidad
+                    de parqueadero para la prestación
+                    del servicio.
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- RECOMENDACIONES -->
+        <div class="bloque-descripcion">
+
+            <h3>Antes de contratar</h3>
+
+            <p>
+                Confirma con ADVANCECOL las dimensiones
+                de las ventanas, ubicación, cantidad
+                de unidades a limpiar, accesibilidad
+                y tarifa final del servicio.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- LLAMADO FINAL -->
+    <section class="ventanas-cotizacion">
+
+        <h2>¿Necesitas limpiar tus ventanas?</h2>
+
+        <p>
+            Cuéntanos las características de tus ventanas
+            y recibe información sobre nuestro servicio.
+        </p>
+
+        <a
+            href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20deseo%20recibir%20una%20cotizaci%C3%B3n%20de%20limpieza%20de%20ventanas."
+            class="boton-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer">
+            Cotizar servicio por WhatsApp ↗
+        </a>
+
+    </section>
+
+</main>
+
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="footer-advancecol">
+
+        <div class="footer-contenedor">
+
+            <div class="footer-columna footer-marca">
+
+                <img
+                    src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                    alt="Logo de ADVANCECOL"
+                    class="footer-logo">
+
+                <h3>ADVANCECOL</h3>
+
+                <p>
+                    Expertos en servicios generales.
+                    Transformamos espacios en
+                    experiencias de bienestar.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces útiles</h3>
+
+                <a href="../index.html#trabaja">
+                    Trabaja con nosotros
+                </a>
+
+                <a href="https://wa.me/573202699680"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Chat de WhatsApp
+                </a>
+
+                <a href="../index.html#preguntas-frecuentes">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Atención al cliente</h3>
+
+                <a href="mailto:gerenciaadvancecol@gmail.com">
+                    gerenciaadvancecol@gmail.com
+                </a>
+
+                <a href="tel:+573202699680">
+                    320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    320 607 11 84
+                </a>
+
+                <h3 class="footer-subtitulo">Dirección</h3>
+
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    TikTok ↗
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN LEGAL -->
+        <div class="footer-legal">
+
+            <h3>Información legal</h3>
+
+            <div class="footer-enlaces-legales">
+
+                <a href="../politica-datos.html">
+                    Tratamiento de datos personales
+                </a>
+
+                <a href="../terminos.html">
+                    Términos y condiciones
+                </a>
+
+                <a href="../cookies.html">
+                    Política de cookies
+                </a>
+
+                <a href="../privacidad.html">
+                    Aviso de privacidad
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-inferior">
+
+            <p>
+                &copy; <span id="anio-actual"></span>
+                ADVANCECOL. Todos los derechos reservados.
+            </p>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+
+    <script>
+        const anio = document.getElementById("anio-actual");
+
+        if (anio) {
+            anio.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicio de jardineria | ADVANCECOL</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO CORPORATIVO -->
+    <header class="encabezado">
+
+        <nav class="barra-verde" aria-label="Navegación principal">
+
+            <button class="boton-menu"
+                    id="boton-menu"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-lateral"
+                    aria-expanded="false">
+
+                <span class="lineas-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="texto-menu">menú</span>
+            </button>
+
+            <div class="enlaces-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../nosotros/nosotros.html">Nosotros</a>
+                <a href="../index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- BUSCADOR -->
+            <form class="buscador" id="form-busqueda" role="search">
+
+                <input type="search"
+                       id="buscar"
+                       placeholder="Buscar..."
+                       aria-label="Buscar en ADVANCECOL">
+
+                <button type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </button>
+
+            </form>
+
+        </nav>
+
+        <!-- LOGO -->
+        <div class="contenedor-logo">
+            <img
+                src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                alt="Logo de ADVANCECOL"
+                class="logo">
+        </div>
+
+    </header>
+
+    <!-- FONDO DEL MENÚ -->
+    <div class="fondo-menu" id="fondo-menu" hidden></div>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu-lateral"
+           id="menu-lateral"
+           aria-label="Menú de navegación"
+           aria-hidden="true"
+           inert>
+
+        <div class="menu-lateral-header">
+            <h2>ADVANCECOL</h2>
+
+            <button id="cerrar-menu"
+                    type="button"
+                    aria-label="Cerrar menú">
+                &times;
+            </button>
+        </div>
+
+        <div class="menu-principal">
+            <a href="../index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="../index.html#productos">Productos</a>
+            <a href="../nosotros/nosotros.html">Nosotros</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </div>
+
+        <div class="menu-secundario">
+
+            <a href="../index.html#trabaja">
+                Trabaja con nosotros
+            </a>
+
+            <a href="https://wa.me/573202699680"
+               target="_blank"
+               rel="noopener noreferrer">
+                Chat de WhatsApp
+            </a>
+
+            <h3>Atención al cliente</h3>
+
+            <a href="mailto:gerenciaadvancecol@gmail.com">
+                ✉ gerenciaadvancecol@gmail.com
+            </a>
+
+            <div class="datos-contacto">
+                <span>Teléfonos</span>
+
+                <a href="tel:+573202699680">
+                    ☎ 320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    ☎ 314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    ☎ 320 607 11 84
+                </a>
+            </div>
+
+            <div class="direccion">
+                <span>Dirección</span>
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+            </div>
+
+            <a href="../index.html#preguntas-frecuentes">
+                Preguntas frecuentes
+            </a>
+
+            <div class="redes-sociales">
+
+                <h3>Síguenos en nuestras redes</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red facebook">f</span>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red instagram">◎</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red tiktok">♪</span>
+                    <span>TikTok</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="creditos-web">
+            <span>Desarrollo web</span>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+        </div>
+
+    </aside>
+
+    
+
+
+<!-- SERVICIO DE JARDINERÍA ADVANCECOL -->
+<main class="pagina-detalle">
+
+    <!-- VOLVER A TODOS LOS SERVICIOS -->
+    <a href="servicios.html" class="volver-servicios">
+        ← Volver a todos los servicios
+    </a>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="titulo-detalle">
+        <h1>Servicio de jardinería</h1>
+        <div class="linea-detalle"></div>
+    </div>
+
+    <!-- PRESENTACIÓN DEL SERVICIO -->
+    <section class="detalle-principal">
+
+        <!-- FOTOGRAFÍA -->
+        <div class="detalle-imagen">
+            <img
+                src="../assets/jardineria.png"
+                alt="Servicio de jardinería ADVANCECOL"
+            >
+        </div>
+
+        <!-- DESCRIPCIÓN INICIAL -->
+        <div class="detalle-informacion">
+
+            <h2>Jardinería integral para tus espacios</h2>
+
+            <p>
+                En ADVANCECOL entendemos que un jardín
+                bien diseñado y con mantenimiento constante
+                es esencial para la estética del hogar,
+                empresa, conjunto residencial y otros espacios.
+            </p>
+
+            <p>
+                Por ello, ofrecemos un servicio de jardinería
+                integral orientado al cuidado, mantenimiento
+                y mejora de zonas verdes, con atención
+                profesional y personalizada.
+            </p>
+
+            <h3>¿Por qué elegirnos?</h3>
+
+            <ul class="lista-resumen">
+                <li>Profesionalismo.</li>
+                <li>Calidad garantizada.</li>
+                <li>Atención personalizada.</li>
+                <li>Confianza.</li>
+            </ul>
+
+            <a
+                class="boton-whatsapp"
+                href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20quiero%20cotizar%20el%20servicio%20de%20jardiner%C3%ADa."
+                target="_blank"
+                rel="noopener noreferrer">
+                Solicitar cotización por WhatsApp ↗
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- DESCRIPCIÓN DEL SERVICIO -->
+    <section class="descripcion-detalle">
+
+        <h2>Descripción del servicio</h2>
+
+        <!-- MOTIVOS -->
+        <div class="bloque-descripcion">
+
+            <h3>¿Por qué elegirnos?</h3>
+
+            <ul>
+                <li>Profesionalismo.</li>
+                <li>Calidad garantizada.</li>
+                <li>Atención personalizada.</li>
+                <li>Confianza.</li>
+            </ul>
+
+        </div>
+
+        <!-- ACTIVIDADES -->
+        <div class="bloque-descripcion">
+
+            <h3>Actividades a realizar</h3>
+
+            <ul>
+                <li>Guadañar.</li>
+                <li>Organizar jardines.</li>
+                <li>Escobillar.</li>
+                <li>Podar.</li>
+                <li>Mantener áreas de jardinería limpias.</li>
+                <li>Fumigación insecticida.</li>
+            </ul>
+
+        </div>
+
+        <!-- ATENCIÓN PERSONALIZADA -->
+        <div class="bloque-descripcion">
+
+            <h3>Atención personalizada</h3>
+
+            <p>
+                Nuestro servicio de jardinería se adapta
+                a las necesidades de cada cliente y al tipo
+                de espacio que requiere intervención.
+            </p>
+
+            <p>
+                Podemos atender hogares, empresas,
+                conjuntos residenciales y otros espacios
+                que necesiten mantenimiento y cuidado
+                de sus zonas verdes.
+            </p>
+
+        </div>
+
+        <!-- ANTES DE CONTRATAR -->
+        <div class="bloque-descripcion">
+
+            <h3>Antes de contratar</h3>
+
+            <p>
+                Comunícate con ADVANCECOL para indicar
+                el tipo de espacio, extensión del jardín,
+                actividades requeridas y condiciones
+                de acceso al lugar.
+            </p>
+
+            <p>
+                Nuestro equipo te informará sobre
+                la disponibilidad, el alcance del trabajo
+                y el valor correspondiente del servicio.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- COTIZACIÓN FINAL -->
+    <section class="ventanas-cotizacion">
+
+        <h2>¿Necesitas mantenimiento para tus zonas verdes?</h2>
+
+        <p>
+            En ADVANCECOL te ayudamos a conservar
+            y mejorar tus jardines y áreas verdes.
+            Solicita tu cotización y recibe atención
+            personalizada para tu servicio.
+        </p>
+
+        <a
+            href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20necesito%20un%20servicio%20de%20jardiner%C3%ADa%20y%20quiero%20recibir%20una%20cotizaci%C3%B3n."
+            class="boton-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer">
+            Cotizar servicio de jardinería ↗
+        </a>
+
+    </section>
+
+</main>
+
+
+
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="footer-advancecol">
+
+        <div class="footer-contenedor">
+
+            <div class="footer-columna footer-marca">
+
+                <img
+                    src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                    alt="Logo de ADVANCECOL"
+                    class="footer-logo">
+
+                <h3>ADVANCECOL</h3>
+
+                <p>
+                    Expertos en servicios generales.
+                    Transformamos espacios en
+                    experiencias de bienestar.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces útiles</h3>
+
+                <a href="../index.html#trabaja">
+                    Trabaja con nosotros
+                </a>
+
+                <a href="https://wa.me/573202699680"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Chat de WhatsApp
+                </a>
+
+                <a href="../index.html#preguntas-frecuentes">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Atención al cliente</h3>
+
+                <a href="mailto:gerenciaadvancecol@gmail.com">
+                    gerenciaadvancecol@gmail.com
+                </a>
+
+                <a href="tel:+573202699680">
+                    320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    320 607 11 84
+                </a>
+
+                <h3 class="footer-subtitulo">Dirección</h3>
+
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    TikTok ↗
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN LEGAL -->
+        <div class="footer-legal">
+
+            <h3>Información legal</h3>
+
+            <div class="footer-enlaces-legales">
+
+                <a href="../politica-datos.html">
+                    Tratamiento de datos personales
+                </a>
+
+                <a href="../terminos.html">
+                    Términos y condiciones
+                </a>
+
+                <a href="../cookies.html">
+                    Política de cookies
+                </a>
+
+                <a href="../privacidad.html">
+                    Aviso de privacidad
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-inferior">
+
+            <p>
+                &copy; <span id="anio-actual"></span>
+                ADVANCECOL. Todos los derechos reservados.
+            </p>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+
+    <script>
+        const anio = document.getElementById("anio-actual");
+
+        if (anio) {
+            anio.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>

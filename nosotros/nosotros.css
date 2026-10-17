@@ -1,0 +1,202 @@
+
+/* PÁGINA NOSOTROS - ADVANCECOL */
+
+.pagina-nosotros {
+    background: #f5faf5;
+    color: #244a34;
+    padding-bottom: 70px;
+}
+
+/* INTRODUCCIÓN */
+
+.nosotros-introduccion {
+    max-width: 1050px;
+    margin: 70px auto 60px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.nosotros-introduccion h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    color: #0f6781;
+    margin-bottom: 20px;
+}
+
+.linea-nosotros {
+    width: 85px;
+    height: 5px;
+    background: #238445;
+    border-radius: 10px;
+    margin: 0 auto 30px;
+}
+
+.nosotros-introduccion p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* BENEFICIOS */
+
+.nosotros-beneficios {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.beneficio-nosotros {
+    background: #ffffff;
+    border: 1px solid #dfebe1;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease;
+}
+
+.beneficio-nosotros:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio-nosotros img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.beneficio-contenido {
+    padding: 28px;
+}
+
+.beneficio-contenido h2 {
+    color: #125631;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.beneficio-contenido p {
+    color: #476052;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* MISIÓN Y VISIÓN */
+
+.nosotros-identidad {
+    max-width: 1150px;
+    margin: 0 auto 85px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.identidad-tarjeta {
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    border: 1px solid #dfebe1;
+    border-top: 5px solid #238445;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+.identidad-tarjeta h2 {
+    font-size: 34px;
+    color: #125631;
+    margin-bottom: 20px;
+}
+
+.identidad-tarjeta p {
+    line-height: 1.9;
+    color: #476052;
+    font-size: 16px;
+}
+
+/* CONTACTO FINAL */
+
+.nosotros-contacto {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 25px;
+    text-align: center;
+    background: #e8f3e9;
+    border-radius: 20px;
+}
+
+.nosotros-contacto h2 {
+    color: #125631;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.nosotros-contacto p {
+    line-height: 1.8;
+    max-width: 680px;
+    margin: 0 auto 28px;
+}
+
+.boton-nosotros {
+    display: inline-block;
+    padding: 14px 24px;
+    margin: 6px;
+    background: #0f6781;
+    color: white;
+    border-radius: 9px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.boton-nosotros:hover {
+    background: #238445;
+    color: white;
+}
+
+.boton-contacto {
+    background: #238445;
+}
+
+.boton-contacto:hover {
+    background: #125631;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .nosotros-beneficios,
+    .nosotros-identidad {
+        grid-template-columns: 1fr;
+        padding: 0 18px;
+    }
+
+    .nosotros-introduccion {
+        margin: 45px auto;
+    }
+
+    .nosotros-introduccion p {
+        font-size: 16px;
+    }
+
+    .beneficio-nosotros img {
+        height: 220px;
+    }
+
+    .identidad-tarjeta {
+        padding: 28px;
+    }
+
+    .nosotros-contacto {
+        margin: 0 18px;
+        padding: 35px 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .beneficio-nosotros {
+        transition: none;
+    }
+}

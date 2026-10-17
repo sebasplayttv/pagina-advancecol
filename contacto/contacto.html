@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>contacto y empleo | ADVANCECOL</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO CORPORATIVO -->
+    <header class="encabezado">
+
+        <nav class="barra-verde" aria-label="Navegación principal">
+
+            <button class="boton-menu"
+                    id="boton-menu"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-lateral"
+                    aria-expanded="false">
+
+                <span class="lineas-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="texto-menu">menú</span>
+            </button>
+
+            <div class="enlaces-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../servicios/servicios.html">Servicios</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../nosotros/nosotros.html">Nosotros</a>
+                <a href="contacto.html#contacto">Contacto</a>
+            </div>
+
+            <!-- BUSCADOR -->
+            <form class="buscador" id="form-busqueda" role="search">
+
+                <input type="search"
+                       id="buscar"
+                       placeholder="Buscar..."
+                       aria-label="Buscar en ADVANCECOL">
+
+                <button type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </button>
+
+            </form>
+
+        </nav>
+
+        <!-- LOGO -->
+        <div class="contenedor-logo">
+            <img
+                src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                alt="Logo de ADVANCECOL"
+                class="logo">
+        </div>
+
+    </header>
+
+    <!-- FONDO DEL MENÚ -->
+    <div class="fondo-menu" id="fondo-menu" hidden></div>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu-lateral"
+           id="menu-lateral"
+           aria-label="Menú de navegación"
+           aria-hidden="true"
+           inert>
+
+        <div class="menu-lateral-header">
+            <h2>ADVANCECOL</h2>
+
+            <button id="cerrar-menu"
+                    type="button"
+                    aria-label="Cerrar menú">
+                &times;
+            </button>
+        </div>
+
+        <div class="menu-principal">
+            <a href="../index.html">Inicio</a>
+            <a href="../servicios/servicios.html">Servicios</a>
+            <a href="../index.html#productos">Productos</a>
+            <a href="../nosotros/nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="menu-secundario">
+
+            <a href="contacto.html#trabaja">
+                Trabaja con nosotros
+            </a>
+
+            <a href="https://wa.me/573202699680"
+               target="_blank"
+               rel="noopener noreferrer">
+                Chat de WhatsApp
+            </a>
+
+            <h3>Atención al cliente</h3>
+
+            <a href="mailto:gerenciaadvancecol@gmail.com">
+                ✉ gerenciaadvancecol@gmail.com
+            </a>
+
+            <div class="datos-contacto">
+                <span>Teléfonos</span>
+
+                <a href="tel:+573202699680">
+                    ☎ 320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    ☎ 314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    ☎ 320 607 11 84
+                </a>
+            </div>
+
+            <div class="direccion">
+                <span>Dirección</span>
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+            </div>
+
+            <a href="../index.html#preguntas-frecuentes">
+                Preguntas frecuentes
+            </a>
+
+            <div class="redes-sociales">
+
+                <h3>Síguenos en nuestras redes</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red facebook">f</span>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red instagram">◎</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red tiktok">♪</span>
+                    <span>TikTok</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="creditos-web">
+            <span>Desarrollo web</span>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+        </div>
+
+    </aside>
+
+    
+
+
+
+
+<main class="pagina-contacto">
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="seccion-contacto">
+
+        <div class="contacto-intro">
+            <h1>CONTACTO</h1>
+            <p>
+                Estamos para ayudarte. Comunícate con
+                ADVANCECOL o envíanos tu solicitud.
+            </p>
+        </div>
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <div class="contacto-datos">
+
+            <article>
+                <h2>Dirección</h2>
+                <p>Carrera 47 # 12 A - 07</p>
+                <p>Bogotá, Colombia</p>
+            </article>
+
+            <article>
+                <h2>Correo electrónico</h2>
+                <a href="mailto:gerenciaadvancecol@gmail.com">
+                    gerenciaadvancecol@gmail.com
+                </a>
+            </article>
+
+            <article>
+                <h2>Teléfonos</h2>
+                <a href="tel:+573202699680">320 269 9680</a>
+                <a href="tel:+573147293930">314 729 39 30</a>
+                <a href="tel:+573206071184">320 607 11 84</a>
+            </article>
+
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="contacto-formulario">
+
+            <h2>Envíanos un mensaje</h2>
+
+            <p>
+                Completa tus datos y selecciona
+                los servicios que necesitas.
+            </p>
+
+            <form
+                id="formulario-contacto"
+                class="formulario-advancecol"
+                action="https://formsubmit.co/gerenciaadvancecol@gmail.com"
+                method="POST">
+
+                <input type="hidden" name="_subject"
+                       value="Nueva consulta web ADVANCECOL">
+
+                <input type="hidden" name="_captcha"
+                       value="true">
+
+                <input type="text" name="_honey"
+                       style="display:none"
+                       tabindex="-1"
+                       autocomplete="off">
+
+                <div class="form-grid">
+
+                    <div class="campo">
+                        <label for="contacto-nombre">Nombre *</label>
+                        <input type="text"
+                               id="contacto-nombre"
+                               name="nombre"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="contacto-apellido">Apellido *</label>
+                        <input type="text"
+                               id="contacto-apellido"
+                               name="apellido"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="contacto-email">Correo electrónico *</label>
+                        <input type="email"
+                               id="contacto-email"
+                               name="email"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="contacto-telefono">Teléfono</label>
+                        <input type="tel"
+                               id="contacto-telefono"
+                               name="telefono">
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="contacto-empresa">Empresa</label>
+                        <input type="text"
+                               id="contacto-empresa"
+                               name="empresa">
+                    </div>
+
+                </div>
+
+                <!-- SERVICIOS -->
+                <fieldset class="campo-servicios">
+
+                    <legend>Servicio de tu interés *</legend>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Limpieza por días">
+                        Limpieza por días
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Limpieza de oficinas">
+                        Limpieza de oficinas
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Limpieza de ventanas">
+                        Limpieza de ventanas
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Mantenimiento">
+                        Mantenimiento
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Todero">
+                        Todero
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Jardinería">
+                        Jardinería
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Lavado de tanques">
+                        Lavado de tanques
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="servicios"
+                               value="Ornamentación">
+                        Ornamentación
+                    </label>
+
+                    <p id="contacto-error"
+                       class="mensaje-validacion"
+                       role="alert"></p>
+
+                </fieldset>
+
+                <div class="campo">
+
+                    <label for="contacto-mensaje">
+                        Déjanos un mensaje *
+                    </label>
+
+                    <textarea id="contacto-mensaje"
+                              name="mensaje"
+                              rows="5"
+                              required></textarea>
+
+                </div>
+
+                <label class="aceptacion-datos">
+
+                    <input type="checkbox"
+                           name="acepta_tratamiento"
+                           value="Si"
+                           required>
+
+                    <span>
+                        He leído y acepto la
+                        <a href="../politica-datos.html"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            política de tratamiento de datos
+                        </a>.
+                    </span>
+
+                </label>
+
+                <button type="submit" class="boton-enviar">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN TRABAJA CON NOSOTROS -->
+    <section id="trabaja" class="seccion-trabaja">
+
+        <div class="trabaja-intro">
+
+            <!-- FOTOGRAFÍA -->
+            <div class="trabaja-imagen">
+
+                <img
+                    src="../contacto/trabajaconnosotros.png"
+                    alt="Equipo profesional en entorno de trabajo">
+
+            </div>
+
+            <!-- INFORMACIÓN -->
+            <div class="trabaja-presentacion">
+
+                <h2>Trabaja con nosotros</h2>
+
+                <p>
+                    En ADVANCECOL buscamos personas
+                    responsables, comprometidas y
+                    con deseos de crecer profesionalmente.
+                </p>
+
+                <p>
+                    Queremos contar con personas que
+                    contribuyan a brindar servicios
+                    de calidad para nuestros clientes.
+                </p>
+
+                <p>
+                    Completa el siguiente formulario
+                    y adjunta tu hoja de vida en PDF.
+                </p>
+
+                <!-- FORMULARIO EMPLEO -->
+                <div class="trabaja-formulario">
+
+                    <h3>¡Únete a nuestro equipo!</h3>
+
+                    <form
+                        id="formulario-empleo"
+                        class="formulario-advancecol"
+                        action="https://formsubmit.co/gerenciaadvancecol@gmail.com"
+                        method="POST"
+                        enctype="multipart/form-data">
+
+                        <input type="hidden" name="_subject"
+                               value="Nueva hoja de vida ADVANCECOL">
+
+                        <input type="hidden" name="_captcha"
+                               value="true">
+
+                        <input type="text" name="_honey"
+                               style="display:none"
+                               tabindex="-1"
+                               autocomplete="off">
+
+                        <div class="form-grid">
+
+                            <div class="campo">
+                                <label for="empleo-nombre">Nombre *</label>
+                                <input type="text"
+                                       id="empleo-nombre"
+                                       name="nombre"
+                                       required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="empleo-apellido">Apellido *</label>
+                                <input type="text"
+                                       id="empleo-apellido"
+                                       name="apellido"
+                                       required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="empleo-email">Correo *</label>
+                                <input type="email"
+                                       id="empleo-email"
+                                       name="email"
+                                       required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="empleo-telefono">Teléfono *</label>
+                                <input type="tel"
+                                       id="empleo-telefono"
+                                       name="telefono"
+                                       required>
+                            </div>
+
+                        </div>
+
+                        <div class="campo">
+
+                            <label for="empleo-cargo">
+                                Área de interés *
+                            </label>
+
+                            <select id="empleo-cargo"
+                                    name="area_interes"
+                                    required>
+
+                                <option value="">
+                                    Selecciona una opción
+                                </option>
+
+                                <option>Limpieza y aseo</option>
+                                <option>Mantenimiento</option>
+                                <option>Jardinería</option>
+                                <option>Todero</option>
+                                <option>Lavado de tanques</option>
+                                <option>Ornamentación</option>
+                                <option>Administración</option>
+                                <option>Otra área</option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- ARCHIVO PDF -->
+                        <div class="campo">
+
+                            <label for="hoja-vida">
+                                Adjunta tu hoja de vida en PDF *
+                            </label>
+
+                            <input
+                                type="file"
+                                id="hoja-vida"
+                                name="attachment"
+                                accept=".pdf,application/pdf"
+                                required>
+
+                            <small>
+                                Formato PDF. Tamaño máximo: 10 MB.
+                            </small>
+
+                            <p id="archivo-mensaje"
+                               class="mensaje-validacion"
+                               role="alert"></p>
+
+                        </div>
+
+                        <div class="campo">
+
+                            <label for="empleo-mensaje">
+                                Cuéntanos sobre tu experiencia
+                            </label>
+
+                            <textarea
+                                id="empleo-mensaje"
+                                name="experiencia"
+                                rows="4"></textarea>
+
+                        </div>
+
+                        <!-- AUTORIZACIÓN -->
+                        <label class="aceptacion-datos">
+
+                            <input type="checkbox"
+                                   name="acepta_tratamiento"
+                                   value="Si"
+                                   required>
+
+                            <span>
+                                He leído y acepto la
+                                <a href="../politica-datos.html"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    política de tratamiento de datos
+                                </a>
+                                para gestionar mi postulación.
+                            </span>
+
+                        </label>
+
+                        <button type="submit" class="boton-enviar">
+                            Enviar hoja de vida
+                        </button>
+
+                        <p class="formulario-nota">
+                            Tus datos y el archivo adjunto
+                            serán procesados por el proveedor
+                            del formulario y enviados al
+                            correo autorizado de ADVANCECOL.
+                            No incluyas datos sensibles
+                            innecesarios.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
+
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="footer-advancecol">
+
+        <div class="footer-contenedor">
+
+            <div class="footer-columna footer-marca">
+
+                <img
+                    src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                    alt="Logo de ADVANCECOL"
+                    class="footer-logo">
+
+                <h3>ADVANCECOL</h3>
+
+                <p>
+                    Expertos en servicios generales.
+                    Transformamos espacios en
+                    experiencias de bienestar.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces útiles</h3>
+
+                <a href="../index.html#trabaja">
+                    Trabaja con nosotros
+                </a>
+
+                <a href="https://wa.me/573202699680"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Chat de WhatsApp
+                </a>
+
+                <a href="../index.html#preguntas-frecuentes">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Atención al cliente</h3>
+
+                <a href="mailto:gerenciaadvancecol@gmail.com">
+                    gerenciaadvancecol@gmail.com
+                </a>
+
+                <a href="tel:+573202699680">
+                    320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    320 607 11 84
+                </a>
+
+                <h3 class="footer-subtitulo">Dirección</h3>
+
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    TikTok ↗
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN LEGAL -->
+        <div class="footer-legal">
+
+            <h3>Información legal</h3>
+
+            <div class="footer-enlaces-legales">
+
+                <a href="../politica-datos.html">
+                    Tratamiento de datos personales
+                </a>
+
+                <a href="../terminos.html">
+                    Términos y condiciones
+                </a>
+
+                <a href="../cookies.html">
+                    Política de cookies
+                </a>
+
+                <a href="../privacidad.html">
+                    Aviso de privacidad
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-inferior">
+
+            <p>
+                &copy; <span id="anio-actual"></span>
+                ADVANCECOL. Todos los derechos reservados.
+            </p>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+    <script src="contacto.js"></script>
+
+    <script>
+        const anio = document.getElementById("anio-actual");
+
+        if (anio) {
+            anio.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicio de mantenimiento | ADVANCECOL</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO CORPORATIVO -->
+    <header class="encabezado">
+
+        <nav class="barra-verde" aria-label="Navegación principal">
+
+            <button class="boton-menu"
+                    id="boton-menu"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-controls="menu-lateral"
+                    aria-expanded="false">
+
+                <span class="lineas-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="texto-menu">menú</span>
+            </button>
+
+            <div class="enlaces-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../nosotros/nosotros.html">Nosotros</a>
+                <a href="../index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- BUSCADOR -->
+            <form class="buscador" id="form-busqueda" role="search">
+
+                <input type="search"
+                       id="buscar"
+                       placeholder="Buscar..."
+                       aria-label="Buscar en ADVANCECOL">
+
+                <button type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </button>
+
+            </form>
+
+        </nav>
+
+        <!-- LOGO -->
+        <div class="contenedor-logo">
+            <img
+                src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                alt="Logo de ADVANCECOL"
+                class="logo">
+        </div>
+
+    </header>
+
+    <!-- FONDO DEL MENÚ -->
+    <div class="fondo-menu" id="fondo-menu" hidden></div>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu-lateral"
+           id="menu-lateral"
+           aria-label="Menú de navegación"
+           aria-hidden="true"
+           inert>
+
+        <div class="menu-lateral-header">
+            <h2>ADVANCECOL</h2>
+
+            <button id="cerrar-menu"
+                    type="button"
+                    aria-label="Cerrar menú">
+                &times;
+            </button>
+        </div>
+
+        <div class="menu-principal">
+            <a href="../index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="../index.html#productos">Productos</a>
+            <a href="../nosotros/nosotros.html">Nosotros</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </div>
+
+        <div class="menu-secundario">
+
+            <a href="../index.html#trabaja">
+                Trabaja con nosotros
+            </a>
+
+            <a href="https://wa.me/573202699680"
+               target="_blank"
+               rel="noopener noreferrer">
+                Chat de WhatsApp
+            </a>
+
+            <h3>Atención al cliente</h3>
+
+            <a href="mailto:gerenciaadvancecol@gmail.com">
+                ✉ gerenciaadvancecol@gmail.com
+            </a>
+
+            <div class="datos-contacto">
+                <span>Teléfonos</span>
+
+                <a href="tel:+573202699680">
+                    ☎ 320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    ☎ 314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    ☎ 320 607 11 84
+                </a>
+            </div>
+
+            <div class="direccion">
+                <span>Dirección</span>
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+            </div>
+
+            <a href="../index.html#preguntas-frecuentes">
+                Preguntas frecuentes
+            </a>
+
+            <div class="redes-sociales">
+
+                <h3>Síguenos en nuestras redes</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red facebook">f</span>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red instagram">◎</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="red-social">
+                    <span class="icono-red tiktok">♪</span>
+                    <span>TikTok</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="creditos-web">
+            <span>Desarrollo web</span>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+        </div>
+
+    </aside>
+
+    
+
+<!-- SERVICIO DE MANTENIMIENTO ADVANCECOL -->
+<main class="pagina-detalle">
+
+    <!-- VOLVER AL CATÁLOGO -->
+    <a href="servicios.html" class="volver-servicios">
+        ← Volver a todos los servicios
+    </a>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="titulo-detalle">
+
+        <h1>Servicio de mantenimiento</h1>
+
+        <div class="linea-detalle"></div>
+
+    </div>
+
+    <!-- PRESENTACIÓN DEL SERVICIO -->
+    <section class="detalle-principal">
+
+        <!-- IMAGEN -->
+        <div class="detalle-imagen">
+
+            <img
+                src="../assets/mantenimiento.png"
+                alt="Servicio de mantenimiento ADVANCECOL"
+            >
+
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="detalle-informacion">
+
+            <h2>Mantenimiento de instalaciones</h2>
+
+            <p>
+                En ADVANCECOL entendemos la importancia
+                de mantener tus instalaciones en óptimas
+                condiciones para garantizar su
+                funcionalidad, seguridad y apariencia.
+            </p>
+
+            <p>
+                Ofrecemos un servicio de mantenimiento
+                completo, diseñado para satisfacer tus
+                necesidades específicas con la máxima
+                calidad y profesionalismo.
+            </p>
+
+            <h3>Soluciones para tus espacios</h3>
+
+            <p>
+                Contamos con diferentes actividades
+                de mantenimiento, reparación y
+                mejoramiento de instalaciones,
+                de acuerdo con los requerimientos
+                de cada cliente.
+            </p>
+
+            <!-- WHATSAPP -->
+            <a
+                class="boton-whatsapp"
+                href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20quiero%20cotizar%20el%20servicio%20de%20mantenimiento."
+                target="_blank"
+                rel="noopener noreferrer">
+                Solicitar cotización por WhatsApp ↗
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- DESCRIPCIÓN DEL SERVICIO -->
+    <section class="descripcion-detalle">
+
+        <h2>Descripción del servicio</h2>
+
+        <!-- ACTIVIDADES -->
+        <div class="bloque-descripcion">
+
+            <h3>Actividades a realizar</h3>
+
+            <ul>
+
+                <li>
+                    Lavado o pintura de exteriores.
+                </li>
+
+                <li>
+                    Soldadura y pintura.
+                </li>
+
+                <li>
+                    Fabricación de estructuras.
+                </li>
+
+                <li>
+                    Instalación de cielorrasos,
+                    tejas y domos.
+                </li>
+
+                <li>
+                    Lavado e impermeabilización
+                    de fachadas.
+                </li>
+
+                <li>
+                    Remodelaciones de pintura
+                    exterior e interior.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="bloque-descripcion">
+
+            <h3>Servicio personalizado</h3>
+
+            <p>
+                Las actividades se programan
+                de acuerdo con las necesidades
+                de mantenimiento identificadas
+                y las características de las
+                instalaciones.
+            </p>
+
+        </div>
+
+        <!-- ANTES DE CONTRATAR -->
+        <div class="bloque-descripcion">
+
+            <h3>Antes de contratar</h3>
+
+            <p>
+                Comunícate con nuestro equipo
+                para informar el tipo de mantenimiento,
+                ubicación del inmueble, características
+                del trabajo y condiciones de acceso.
+            </p>
+
+            <p>
+                La disponibilidad, el alcance
+                y el valor final del servicio
+                deberán confirmarse previamente
+                con ADVANCECOL.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- COTIZACIÓN FINAL -->
+    <section class="ventanas-cotizacion">
+
+        <h2>¿Necesitas mantenimiento para tus espacios?</h2>
+
+        <p>
+            En ADVANCECOL estamos preparados
+            para ayudarte a conservar y mejorar
+            tus instalaciones.
+            Cuéntanos qué necesitas y solicita
+            información sobre nuestros servicios.
+        </p>
+
+        <a
+            href="https://wa.me/573202699680?text=Hola%20ADVANCECOL%2C%20deseo%20solicitar%20una%20cotizaci%C3%B3n%20de%20mantenimiento."
+            class="boton-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer">
+            Cotizar mantenimiento por WhatsApp ↗
+        </a>
+
+    </section>
+
+</main>
+
+
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="footer-advancecol">
+
+        <div class="footer-contenedor">
+
+            <div class="footer-columna footer-marca">
+
+                <img
+                    src="../assets/Captura de pantalla 2026-10-09 194754.png"
+                    alt="Logo de ADVANCECOL"
+                    class="footer-logo">
+
+                <h3>ADVANCECOL</h3>
+
+                <p>
+                    Expertos en servicios generales.
+                    Transformamos espacios en
+                    experiencias de bienestar.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces útiles</h3>
+
+                <a href="../index.html#trabaja">
+                    Trabaja con nosotros
+                </a>
+
+                <a href="https://wa.me/573202699680"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Chat de WhatsApp
+                </a>
+
+                <a href="../index.html#preguntas-frecuentes">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Atención al cliente</h3>
+
+                <a href="mailto:gerenciaadvancecol@gmail.com">
+                    gerenciaadvancecol@gmail.com
+                </a>
+
+                <a href="tel:+573202699680">
+                    320 269 9680
+                </a>
+
+                <a href="tel:+573147293930">
+                    314 729 39 30
+                </a>
+
+                <a href="tel:+573206071184">
+                    320 607 11 84
+                </a>
+
+                <h3 class="footer-subtitulo">Dirección</h3>
+
+                <p>
+                    Carrera 47 # 12 A - 07
+                    Bogotá, Colombia
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61576306651314"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook ↗
+                </a>
+
+                <a href="https://www.instagram.com/advancecol.s.a.s?igsh=ZHp5a3l6dzl0NjJs"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="https://www.tiktok.com/@advancecol4"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    TikTok ↗
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN LEGAL -->
+        <div class="footer-legal">
+
+            <h3>Información legal</h3>
+
+            <div class="footer-enlaces-legales">
+
+                <a href="../politica-datos.html">
+                    Tratamiento de datos personales
+                </a>
+
+                <a href="../terminos.html">
+                    Términos y condiciones
+                </a>
+
+                <a href="../cookies.html">
+                    Política de cookies
+                </a>
+
+                <a href="../privacidad.html">
+                    Aviso de privacidad
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-inferior">
+
+            <p>
+                &copy; <span id="anio-actual"></span>
+                ADVANCECOL. Todos los derechos reservados.
+            </p>
+
+            <a href="https://github.com/sebasplayttv"
+               target="_blank"
+               rel="noopener noreferrer">
+                Desarrollado por SebasPlayTTV ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+
+    <script>
+        const anio = document.getElementById("anio-actual");
+
+        if (anio) {
+            anio.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>

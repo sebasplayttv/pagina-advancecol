@@ -1,0 +1,776 @@
+
+/* =====================================
+   PRESENTACIÓN DE SERVICIOS
+===================================== */
+
+.presentacion-servicios {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 65px 20px 75px;
+    text-align: center;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.presentacion-servicios h1 {
+    color: #0f6781;
+
+    font-size: clamp(38px, 5vw, 65px);
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+/* LÍNEA DECORATIVA */
+
+.linea-servicios {
+    width: 90px;
+    height: 5px;
+
+    background: #248348;
+    border-radius: 20px;
+
+    margin: 0 auto 25px;
+}
+
+/* TEXTO DE PRESENTACIÓN */
+
+.presentacion-servicios p {
+    color: #526658;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .presentacion-servicios {
+        padding: 50px 20px;
+    }
+
+    .presentacion-servicios h1 {
+        font-size: 37px;
+    }
+
+    .presentacion-servicios p {
+        font-size: 15px;
+    }
+}
+
+/* =====================================
+   CATÁLOGO DE SERVICIOS ADVANCECOL
+===================================== */
+
+.catalogo-servicios {
+    width: 100%;
+    padding: 0 5% 90px;
+}
+
+.grid-servicios {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* TARJETAS */
+
+.tarjeta-servicio {
+    background: #ffffff;
+    border: 1px solid #e0eae2;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 24px rgba(0, 65, 25, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 65, 25, 0.15);
+}
+
+/* IMAGEN */
+
+.tarjeta-servicio img {
+    display: block;
+    width: 100%;
+    height: 245px;
+
+    object-fit: cover;
+}
+
+/* TEXTO */
+
+.tarjeta-contenido {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tarjeta-contenido h2 {
+    color: #14532d;
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.tarjeta-contenido p {
+    color: #526658;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+/* BOTÓN VER SERVICIO */
+
+.btn-ver-servicio {
+    display: inline-block;
+
+    padding: 13px 20px;
+    background: #0f6781;
+    color: #ffffff;
+
+    border-radius: 10px;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.btn-ver-servicio:hover {
+    background: #247543;
+    transform: translateY(-2px);
+}
+
+/* TABLETAS */
+
+@media (max-width: 900px) {
+
+    .grid-servicios {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .catalogo-servicios {
+        padding: 0 18px 60px;
+    }
+
+    .tarjeta-servicio img {
+        height: 210px;
+    }
+
+    .tarjeta-contenido {
+        padding: 20px;
+    }
+
+    .tarjeta-contenido h2 {
+        font-size: 21px;
+    }
+
+    .tarjeta-contenido p {
+        font-size: 13px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tarjeta-servicio,
+    .btn-ver-servicio {
+        transition: none;
+    }
+}
+/* =====================================
+   AJUSTES PARA COMPUTADORES
+===================================== */
+
+@media (min-width: 1101px) {
+
+    .footer-contenedor {
+        grid-template-columns: 1.3fr 1fr 1.2fr 1fr;
+        gap: 35px;
+    }
+
+}
+
+/* =====================================
+   AJUSTES PARA CELULARES
+===================================== */
+
+@media (max-width: 650px) {
+
+    .footer-logo {
+        width: 75px;
+    }
+
+    .footer-legal {
+        padding: 22px 0;
+    }
+
+    .footer-enlaces-legales {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .footer-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .footer-inferior p,
+    .footer-inferior a {
+        font-size: 11px;
+    }
+}
+
+/* AJUSTES FINALES DEL FOOTER */
+
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.2fr 1fr;
+    gap: 35px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.footer-logo {
+    display: block;
+    width: 90px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.footer-legal {
+    max-width: 1400px;
+    margin: 30px auto 0;
+    padding: 25px 0;
+    border-top: 1px solid #dce8df;
+}
+
+.footer-legal h3 {
+    color: #14532d;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-enlaces-legales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+}
+
+.footer-enlaces-legales a {
+    color: #333333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-enlaces-legales a:hover {
+    color: #14532d;
+    text-decoration: underline;
+}
+
+.footer-inferior {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #dce8df;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-inferior p,
+.footer-inferior a {
+    color: #555555;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.footer-inferior a:hover {
+    color: #14532d;
+    text-decoration: underline;
+}
+
+/* TABLETAS */
+
+@media (max-width: 950px) {
+    .footer-contenedor {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .footer-contenedor {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-enlaces-legales {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* =====================================
+   DETALLE DE SERVICIO ADVANCECOL
+===================================== */
+
+.pagina-detalle {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 5% 90px;
+}
+
+.volver-servicios {
+    display: inline-block;
+    margin-bottom: 35px;
+    color: #14532d;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.volver-servicios:hover {
+    text-decoration: underline;
+}
+
+/* TÍTULO */
+
+.titulo-detalle {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-detalle h1 {
+    max-width: 950px;
+    margin: 0 auto 20px;
+    color: #14532d;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+.linea-detalle {
+    width: 90px;
+    height: 5px;
+    background: #248348;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* IMAGEN E INFORMACIÓN */
+
+.detalle-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 35px;
+}
+
+.detalle-imagen {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #e6efe8;
+}
+
+.detalle-imagen img {
+    display: block;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.detalle-informacion h2 {
+    color: #14532d;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.detalle-informacion > p {
+    color: #526658;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.detalle-informacion h3 {
+    color: #14532d;
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+/* PRECIOS */
+
+.tarjeta-precios {
+    background: #ffffff;
+    border: 1px solid #d7e7da;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,65,25,0.05);
+}
+
+.tarjeta-precios h4 {
+    color: #14532d;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.fila-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-top: 1px solid #edf1ee;
+    color: #333333;
+    font-size: 14px;
+}
+
+.fila-precio strong {
+    color: #14532d;
+    font-size: 19px;
+    white-space: nowrap;
+}
+
+.detalle-informacion .nota-precios {
+    font-size: 12px;
+    color: #66766b;
+    margin: 12px 0 20px;
+}
+
+/* WHATSAPP */
+
+.boton-whatsapp {
+    display: inline-block;
+    padding: 15px 23px;
+    background: #14532d;
+    color: white;
+    border-radius: 11px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.boton-whatsapp:hover {
+    background: #247543;
+}
+
+/* DESCRIPCIÓN */
+
+.descripcion-detalle {
+    margin-top: 65px;
+    padding-top: 35px;
+    border-top: 1px solid #d7e7da;
+}
+
+.descripcion-detalle h2 {
+    color: #14532d;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.bloque-descripcion {
+    margin-bottom: 30px;
+}
+
+.bloque-descripcion h3 {
+    color: #14532d;
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.bloque-descripcion ul {
+    padding-left: 24px;
+}
+
+.bloque-descripcion li,
+.bloque-descripcion p {
+    color: #526658;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .detalle-principal {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .pagina-detalle {
+        padding: 25px 18px 60px;
+    }
+
+    .detalle-imagen img {
+        height: 300px;
+    }
+
+    .detalle-informacion h2 {
+        font-size: 23px;
+    }
+
+    .fila-precio strong {
+        font-size: 16px;
+    }
+
+    .descripcion-detalle h2 {
+        font-size: 25px;
+    }
+}
+
+/* PLANES DE LIMPIEZA DE OFICINAS */
+
+.seccion-planes {
+    padding: 65px 0;
+    margin-top: 45px;
+    border-top: 1px solid #d9e8dd;
+}
+
+.seccion-planes .titulo-detalle {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.cuadricula-planes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.plan-oficina {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #d5e5d9;
+    border-radius: 15px;
+    padding: 45px 25px 25px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-oficina h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #125631;
+    margin: 0 0 20px;
+}
+
+.precio-plan {
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 600;
+    color: #125631;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.precio-plan span {
+    font-size: 22px;
+    vertical-align: top;
+}
+
+.precio-anterior {
+    font-size: 14px;
+    color: #777;
+    text-decoration: line-through;
+}
+
+.descuento-plan {
+    color: #238344;
+    font-size: 14px;
+}
+
+.plan-jornadas {
+    font-size: 16px;
+    color: #354d40;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.plan-vigencia {
+    color: #125631;
+    font-weight: 600;
+    margin: 15px 0 25px;
+}
+
+.boton-plan {
+    display: inline-block;
+    background: #125631;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    max-width: 290px;
+    margin-top: auto;
+}
+
+.boton-plan:hover {
+    background: #218044;
+    color: #ffffff;
+}
+
+.nota-plan {
+    font-size: 13px;
+    color: #66796b;
+    margin-top: 25px;
+}
+
+.plan-destacado {
+    background: #edf7ef;
+    border: 2px solid #258549;
+}
+
+.etiqueta-plan {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #125631;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.aviso-planes {
+    text-align: center;
+    color: #66796b;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 700px) {
+    .cuadricula-planes {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .seccion-planes {
+        padding: 45px 0;
+    }
+
+    .plan-oficina {
+        padding: 40px 20px 25px;
+    }
+}
+
+/* LIMPIEZA DE VENTANAS */
+
+.ventanas-cotizacion {
+    margin: 50px 0 65px;
+    padding: 40px 25px;
+    background: #eaf4eb;
+    border: 1px solid #d4e5d8;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.ventanas-cotizacion h2 {
+    color: #125631;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.ventanas-cotizacion p {
+    color: #445b4c;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.ventanas-cotizacion .boton-whatsapp {
+    display: inline-block;
+}
+
+.lista-resumen {
+    padding-left: 22px;
+    margin: 15px 0 25px;
+    line-height: 1.8;
+    color: #445b4c;
+}
+
+@media (max-width: 700px) {
+    .ventanas-cotizacion {
+        padding: 30px 18px;
+        margin: 35px 0;
+    }
+
+    .ventanas-cotizacion h2 {
+        font-size: 23px;
+    }
+}
+/* PRIMER SERVICIO A TODO EL ANCHO */
+.servicio-industrial {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Imagen del primer servicio */
+.servicio-industrial img {
+    width: 45%;
+    min-width: 45%;
+    object-fit: cover;
+}
+
+/* Descripción del primer servicio */
+.servicio-industrial .servicio-info {
+    width: 55%;
+    box-sizing: border-box;
+    padding: 35px 40px;
+}
+
+/* Los demás servicios mantienen su diseño */
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+    .servicio-industrial {
+        grid-column: 1 / -1;
+    }
+}
