@@ -1,0 +1,397 @@
+
+/* CONTACTO Y TRABAJA CON NOSOTROS - ADVANCECOL */
+
+.pagina-contacto,
+.pagina-trabaja {
+    background: #f5faf5;
+    color: #194c30;
+    padding: 50px 25px 90px;
+}
+
+.contacto-intro {
+    max-width: 950px;
+    margin: 15px auto 45px;
+    text-align: center;
+}
+
+.contacto-intro h1 {
+    font-size: clamp(35px, 6vw, 58px);
+    color: #125631;
+    margin-bottom: 15px;
+}
+
+.contacto-intro p {
+    line-height: 1.7;
+}
+
+/* DATOS DE CONTACTO */
+
+.contacto-datos {
+    max-width: 1100px;
+    margin: 0 auto 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contacto-datos article {
+    background: white;
+    border: 1px solid #dce9df;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.contacto-datos h2 {
+    color: #125631;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.contacto-datos a {
+    display: block;
+    color: #345741;
+    text-decoration: none;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+/* FORMULARIO */
+
+.contacto-formulario {
+    max-width: 750px;
+    margin: auto;
+}
+
+.contacto-formulario > h2 {
+    font-size: 30px;
+    color: #125631;
+    margin-bottom: 12px;
+}
+
+.contacto-formulario > p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.formulario-advancecol {
+    background: white;
+    border: 1px solid #dce9df;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #b9d2c1;
+    border-radius: 8px;
+    background: white;
+    color: #263b2d;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid #238445;
+    outline-offset: 2px;
+}
+
+.campo input[type="file"] {
+    padding: 12px;
+    background: #f3f8f4;
+}
+
+.campo small {
+    display: block;
+    margin-top: 9px;
+    color: #607565;
+}
+
+/* SERVICIOS */
+
+.campo-servicios {
+    border: 1px solid #dce9df;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 5px 0 25px;
+}
+
+.campo-servicios legend {
+    font-weight: 700;
+    padding: 0 8px;
+}
+
+.campo-servicios label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.campo-servicios input {
+    accent-color: #125631;
+    width: 17px;
+    height: 17px;
+}
+
+/* PRIVACIDAD */
+
+.aceptacion-datos {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.aceptacion-datos input {
+    margin-top: 4px;
+    accent-color: #125631;
+}
+
+.aceptacion-datos a {
+    color: #125631;
+    font-weight: 600;
+}
+
+.boton-enviar {
+    background: #125631;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background: #238445;
+}
+
+.mensaje-validacion {
+    color: #a32424;
+    font-size: 13px;
+    margin-top: 9px;
+}
+
+/* TRABAJA CON NOSOTROS */
+
+.trabaja-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.trabaja-imagen img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.trabaja-presentacion h1 {
+    font-size: clamp(30px, 4vw, 44px);
+    color: #125631;
+    margin-bottom: 18px;
+}
+
+.trabaja-presentacion > p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.trabaja-formulario {
+    background: #e3f1e7;
+    border-radius: 18px;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+.trabaja-formulario h2 {
+    font-size: 25px;
+    color: #125631;
+    margin-bottom: 20px;
+}
+
+.formulario-nota {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #5b6f60;
+}
+
+/* CELULARES */
+
+@media (max-width: 800px) {
+
+    .contacto-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .trabaja-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .trabaja-imagen img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .pagina-contacto,
+    .pagina-trabaja {
+        padding: 30px 15px 60px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-advancecol {
+        padding: 22px 16px;
+    }
+
+    .trabaja-formulario {
+        padding: 12px;
+    }
+
+    .contacto-intro h1 {
+        font-size: 36px;
+    }
+}
+
+/* SECCIONES CONTACTO Y EMPLEO */
+
+.seccion-contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.seccion-trabaja {
+    border-top: 1px solid #d7e8dc;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    scroll-margin-top: 25px;
+}
+
+.seccion-trabaja .trabaja-presentacion h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    color: #125631;
+    margin-bottom: 20px;
+}
+
+.seccion-trabaja .trabaja-formulario h3 {
+    font-size: 25px;
+    color: #125631;
+    margin-bottom: 22px;
+}
+
+#contacto {
+    scroll-margin-top: 25px;
+}
+
+@media (max-width: 750px) {
+    .seccion-contacto {
+        padding-bottom: 50px;
+    }
+
+    .seccion-trabaja {
+        padding-top: 45px;
+    }
+}
+/* FORMULARIOS EN VERDE */
+.formulario-advancecol {
+    background: #dcebdd;
+    border: 1px solid #b9d5bf;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+}
+
+/* CAJA DEL FORMULARIO DE TRABAJA CON NOSOTROS */
+.trabaja-formulario {
+    background: #cfe4d2;
+    border-radius: 18px;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* CAMPOS BLANCOS */
+.campo input,
+.campo select,
+.campo textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #9fc3a6;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #263b2d;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+/* FILE INPUT TAMBIÉN BLANCO */
+.campo input[type="file"] {
+    background: #ffffff;
+    padding: 12px;
+    border: 1px solid #9fc3a6;
+    border-radius: 8px;
+}
+
+/* FIELDSET DE SERVICIOS TAMBIÉN VERDE SUAVE */
+.campo-servicios {
+    border: 1px solid #b9d5bf;
+    background: #e4f0e5;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 5px 0 25px;
+}
+
+/* ÁREA DE CONTACTO MÁS VERDE */
+.contacto-formulario .formulario-advancecol {
+    background: #dcebdd;
+}
+
+/* FORMULARIO DE EMPLEO MÁS VERDE */
+.trabaja-formulario .formulario-advancecol {
+    background: #dcebdd;
+}

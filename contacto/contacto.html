@@ -47,7 +47,7 @@
 
             <a href="contacto/contacto.html#contacto">Contacto</a>
 
-            <a href="trabaja con nosotros">Trabaja con nosotros</a>
+            <a href="../trabajaconnosotros/trabaja.html">Trabaja con nosotros</a>
 
         </div>
 
@@ -103,11 +103,11 @@
 
              <!-- OPCIONES PRINCIPALES -->
     <div class="menu-principal">
-        <a href="#inicio">Inicio</a>
+        <a href="../index.html">Inicio</a>
         <a href="../servicios/servicios.html">Servicios</a>
         <a href="../nosotros/nosotros.html">Nosotros</a>
         <a href="../contacto/contacto.html">Contacto</a>
-        <a href="../trabaja-con-nosotros/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+        <a href="../trabajaconnosotros/trabaja.html">Trabaja con nosotros</a>
     </div>
 
         <div class="menu-secundario">
@@ -411,210 +411,7 @@
 
     </section>
 
-    <!-- SECCIÓN TRABAJA CON NOSOTROS -->
-    <section id="trabaja" class="seccion-trabaja">
-
-        <div class="trabaja-intro">
-
-            <!-- FOTOGRAFÍA -->
-            <div class="trabaja-imagen">
-
-                <img
-                    src="../contacto/trabajaconnosotros.png"
-                    alt="Equipo profesional en entorno de trabajo">
-
-            </div>
-
-            <!-- INFORMACIÓN -->
-            <div class="trabaja-presentacion">
-
-                <h2>Trabaja con nosotros</h2>
-
-                <p>
-                    En ADVANCECOL buscamos personas
-                    responsables, comprometidas y
-                    con deseos de crecer profesionalmente.
-                </p>
-
-                <p>
-                    Queremos contar con personas que
-                    contribuyan a brindar servicios
-                    de calidad para nuestros clientes.
-                </p>
-
-                <p>
-                    Completa el siguiente formulario
-                    y adjunta tu hoja de vida en PDF.
-                </p>
-
-                <!-- FORMULARIO EMPLEO -->
-                <div class="trabaja-formulario">
-
-                    <h3>¡Únete a nuestro equipo!</h3>
-
-                    <form
-                        id="formulario-empleo"
-                        class="formulario-advancecol"
-                        action="https://formsubmit.co/gerenciaadvancecol@gmail.com"
-                        method="POST"
-                        enctype="multipart/form-data">
-
-                        <input type="hidden" name="_subject"
-                               value="Nueva hoja de vida ADVANCECOL">
-
-                        <input type="hidden" name="_captcha"
-                               value="true">
-
-                        <input type="text" name="_honey"
-                               style="display:none"
-                               tabindex="-1"
-                               autocomplete="off">
-
-                        <div class="form-grid">
-
-                            <div class="campo">
-                                <label for="empleo-nombre">Nombre *</label>
-                                <input type="text"
-                                       id="empleo-nombre"
-                                       name="nombre"
-                                       required>
-                            </div>
-
-                            <div class="campo">
-                                <label for="empleo-apellido">Apellido *</label>
-                                <input type="text"
-                                       id="empleo-apellido"
-                                       name="apellido"
-                                       required>
-                            </div>
-
-                            <div class="campo">
-                                <label for="empleo-email">Correo *</label>
-                                <input type="email"
-                                       id="empleo-email"
-                                       name="email"
-                                       required>
-                            </div>
-
-                            <div class="campo">
-                                <label for="empleo-telefono">Teléfono *</label>
-                                <input type="tel"
-                                       id="empleo-telefono"
-                                       name="telefono"
-                                       required>
-                            </div>
-
-                        </div>
-
-                        <div class="campo">
-
-                            <label for="empleo-cargo">
-                                Área de interés *
-                            </label>
-
-                            <select id="empleo-cargo"
-                                    name="area_interes"
-                                    required>
-
-                                <option value="">
-                                    Selecciona una opción
-                                </option>
-
-
-
-                                <option>Servicio industrial</option>
-                                <option>Limpieza y aseo</option>
-                                <option>Mantenimiento</option>
-                                <option>Jardinería</option>
-                                <option>Todero</option>
-                                <option>Lavado de tanques</option>
-                                <option>Ornamentación</option>
-                                <option>Administración</option>
-                                <option>Otra área</option>
-
-                            </select>
-
-                        </div>
-
-                        <!-- ARCHIVO PDF -->
-                        <div class="campo">
-
-                            <label for="hoja-vida">
-                                Adjunta tu hoja de vida en PDF *
-                            </label>
-
-                            <input
-                                type="file"
-                                id="hoja-vida"
-                                name="attachment"
-                                accept=".pdf,application/pdf"
-                                required>
-
-                            <small>
-                                Formato PDF. Tamaño máximo: 10 MB.
-                            </small>
-
-                            <p id="archivo-mensaje"
-                               class="mensaje-validacion"
-                               role="alert"></p>
-
-                        </div>
-
-                        <div class="campo">
-
-                            <label for="empleo-mensaje">
-                                Cuéntanos sobre tu experiencia
-                            </label>
-
-                            <textarea
-                                id="empleo-mensaje"
-                                name="experiencia"
-                                rows="4"></textarea>
-
-                        </div>
-
-                        <!-- AUTORIZACIÓN -->
-                        <label class="aceptacion-datos">
-
-                            <input type="checkbox"
-                                   name="acepta_tratamiento"
-                                   value="Si"
-                                   required>
-
-                            <span>
-                                He leído y acepto la
-                                <a href="../politica-datos.html"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    política de tratamiento de datos
-                                </a>
-                                para gestionar mi postulación.
-                            </span>
-
-                        </label>
-
-                        <button type="submit" class="boton-enviar">
-                            Enviar hoja de vida
-                        </button>
-
-                        <p class="formulario-nota">
-                            Tus datos y el archivo adjunto
-                            serán procesados por el proveedor
-                            del formulario y enviados al
-                            correo autorizado de ADVANCECOL.
-                            No incluyas datos sensibles
-                            innecesarios.
-                        </p>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+    
 
 </main>
 
